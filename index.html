@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Fuel Prices &amp; Taxation Trends | Tableau Project</title>
+<style>
+:root{--navy:#142d4e;--blue:#25658a;--sky:#eaf3f8;--ink:#243447;--muted:#617184;--line:#dce5ec}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f5f8fb;line-height:1.6}
+header{background:linear-gradient(135deg,#142d4e,#25658a);color:#fff;padding:42px 6vw 36px}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;opacity:.85;margin-bottom:10px}
+h1{margin:0;font-size:clamp(28px,4vw,44px);line-height:1.15}header p{max-width:850px;margin:16px 0 0;color:#e7f1f8}.byline{margin-top:18px;font-size:14px;color:#d5e7f2}
+nav{display:flex;flex-wrap:wrap;gap:12px;padding:15px 6vw;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+nav a,.button{display:inline-block;text-decoration:none;font-weight:600;color:var(--blue);border:1px solid #c9dce8;border-radius:8px;padding:8px 14px;background:#fff}
+nav a:hover,.button:hover{background:var(--sky)}main{max-width:1450px;margin:auto;padding:28px 5vw 50px}
+.intro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:18px 0 30px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 3px 12px rgba(20,45,78,.04)}
+.card h3{margin:0 0 8px;color:var(--navy);font-size:17px}h2{color:var(--navy);margin:38px 0 8px;font-size:26px}.section-desc{color:var(--muted);margin:0 0 16px}
+.viz-frame{width:100%;height:780px;border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden}.viz-frame.story{height:850px}
+iframe{width:100%;height:100%;border:0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 20px}
+.button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}.button.primary:hover{background:var(--navy)}
+footer{text-align:center;padding:24px 6vw;color:var(--muted);border-top:1px solid var(--line);background:#fff;font-size:14px}
+@media(max-width:700px){.viz-frame,.viz-frame.story{height:650px}header{padding-top:30px}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Data Analytics with Tableau</div>
+<h1>Global Fuel Prices &amp; Taxation Trends</h1>
+<p>An interactive exploration of global fuel price patterns, taxation, subsidies, regional volatility, income groups, and Brent crude relationships across 2020–2026.</p>
+<div class="byline">Project by <strong>Joyal Sengar</strong> · Tableau Public Web Integration</div>
+</header>
+<nav><a href="#overview">Overview</a><a href="#dashboard">Interactive Dashboard</a><a href="#story">Tableau Story</a><a href="#conclusion">Project Summary</a></nav>
+<main>
+<section id="overview">
+<h2>Project Overview</h2>
+<p class="section-desc">This webpage integrates the published Tableau dashboard and story into one accessible project page.</p>
+<div class="intro-grid">
+<div class="card"><h3>Objective</h3>Explore how fuel prices and tax/subsidy policies vary across countries, regions, and income levels.</div>
+<div class="card"><h3>Key Topics</h3>Fuel price trends, tax percentage, subsidies, diesel and petrol prices, regional volatility, and Brent crude.</div>
+<div class="card"><h3>Interactive Exploration</h3>Use Tableau filters and charts to examine selected regions, countries, income levels, and subsidy groups.</div>
+</div>
+</section>
+<section id="dashboard">
+<h2>Interactive Tableau Dashboard</h2>
+<p class="section-desc">Explore the dashboard below. Use its filters and visualizations to interact with the analysis.</p>
+<div class="actions"><a class="button primary" href="https://public.tableau.com/app/profile/joyal.sengar/viz/globalfuel_17931996617740/Sheet9?publish=yes" target="_blank" rel="noopener">Open Dashboard on Tableau Public</a></div>
+<div class="viz-frame"><iframe title="Global Fuel Prices and Taxation Dashboard" src="https://public.tableau.com/views/globalfuel_17931996617740/Sheet9?:showVizHome=no&:embed=true" allowfullscreen></iframe></div>
+</section>
+<section id="story">
+<h2>Guided Tableau Story</h2>
+<p class="section-desc">Follow the story to review the analysis in a narrative sequence.</p>
+<div class="actions"><a class="button primary" href="https://public.tableau.com/app/profile/joyal.sengar/viz/globalfuel_17931996617740/Story1?publish=yes" target="_blank" rel="noopener">Open Story on Tableau Public</a></div>
+<div class="viz-frame story"><iframe title="Global Fuel Prices and Taxation Tableau Story" src="https://public.tableau.com/views/globalfuel_17931996617740/Story1?:showVizHome=no&:embed=true" allowfullscreen></iframe></div>
+</section>
+<section id="conclusion">
+<h2>Project Summary</h2>
+<div class="card">This Tableau project brings together geographical, temporal, and comparative views of global fuel prices and taxation. The dashboard supports exploration of regional price volatility, country-level diesel and petrol prices, income-group differences, subsidy categories, tax percentages, and the relationship between Brent crude and fuel prices. Interactive filters help users focus on specific subsets of the data and communicate findings through the published dashboard and guided story.</div>
+</section>
+</main>
+<footer>Global Fuel Prices &amp; Taxation Trends (2020–2026) · Created by Joyal Sengar</footer>
+</body>
+</html>
